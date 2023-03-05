@@ -1,0 +1,619 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to right, #5c5c5c, #1d1d1d);
+  color: #fff;
+}
+
+/* ................header............................. */
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.container {
+  width: 90vw;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100vw;
+  max-width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #3b3b3b;
+  background-image: linear-gradient(to bottom, #3b3b3b, #171717);
+  z-index: 60;
+}
+
+header .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+header .flex nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+header .flex nav ul li {
+  margin-left: 20px;
+}
+
+/* ...............................hero.................................. */
+
+.hero-section {
+  width: 100vw;
+  position: relative;
+  background-color: #3b3b3b;
+  background-image: linear-gradient(to bottom, #3b3b3b, #171717);
+}
+
+.hero {
+  height: 90vh;
+  width: 100%;
+  padding: 5px;
+}
+
+.hero .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.hero .info {
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: -120px;
+  opacity: 0.6;
+  transition: margin-bottom 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.hero .animate {
+  margin-bottom: 0;
+  opacity: 1;
+}
+
+.hero .info .name-desktop {
+  font-size: clamp(34px, 6vw, 64px);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+  .hero .info .name-mobile {
+    font-size: clamp(34px, 6vw, 64px);
+        line-height: 1.25;
+        font-weight: 700;
+      display: none;
+  }
+
+.hero .info h3 {
+  margin: 10px 0;
+}
+
+.hero .info .col {
+  display: block;
+  margin: 8px 0;
+  font-size: 24px;
+  opacity: 0.7;
+  letter-spacing: 1px;
+}
+
+.hero .info .col-mobile {
+  display: none;
+opacity: 0.7;
+}
+
+.hero .hero-btn-flex > button {
+  padding: 12px 24px;
+  width: 50%;
+  margin: 10px 0;
+  outline: none;
+  background: linear-gradient(
+    76.35deg,
+    rgb(128, 26, 230) 15.89%,
+    rgb(162, 26, 230) 89.75%
+  );
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  border-radius: 24px;
+}
+
+.hero .extras {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 600px;
+  max-width: 100%;
+  margin-left: 40px;
+  border-radius: 24px 0 0 24px;
+  padding: 10px;
+  background-image: url("./images/code.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero .extras::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 24px 0 0 24px;
+  background: linear-gradient(
+    76.35deg,
+    rgb(128, 26, 230) 15.89%,
+    rgb(162, 26, 230) 89.75%
+  );
+  opacity: 0.7;
+}
+
+.hero .contact-details {
+  z-index: 5;
+  align-items: center;
+  color: #fff;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  border-radius: 6px;
+}
+
+.hero .contact-details .small-flex {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  opacity: 0;
+  transition: margin-bottom 0.9s ease-out, opacity 0.9s ease-out;
+}
+
+.hero .contact-details .animate2 {
+  opacity: 1;
+}
+
+/* .................................svg........................... */
+.svg {
+  margin-top: -5%;
+  background-color: #fff;
+}
+
+/* ...................skills................................ */
+
+.skills {
+  width: 100vw;
+  max-width: 100%;
+  height: 400px;
+  background-color: #fff;
+  color: #0e1525;
+}
+
+.skills .skill {
+  width: 100%;
+  max-width: 100%;
+  background-color: #3b3b3b;
+  background-image: linear-gradient(to bottom, #3b3b3b, #171717);
+  border: 1px solid rebeccapurple;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+  box-shadow: 0 0 10px 2px rebeccapurple;
+  border-radius: 6px;
+}
+
+.skills h3 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* ..............................About................................... */
+
+.about {
+  height: fit-content;
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
+  padding: 40px 0;
+  background-color: #3b3b3b;
+  background-image: linear-gradient(to bottom, #3b3b3b, #171717);
+}
+
+.about .row1 {
+  display: flex;
+}
+
+.about .row1 .me {
+  margin-right: 20px;
+  border-radius: 6px;
+  background: linear-gradient(to bottom, #fff, #f5f5f5);
+}
+
+.about .row1 .me > img {
+  width: 400px;
+}
+
+.about .row1 .me-content {
+  position: absolute;
+  right: 0;
+  width: 800px;
+  border-radius: 24px 0 0 24px;
+  background-color: #3b3b3b;
+  background-image: linear-gradient(to bottom, #3b3b3b, #171717);
+}
+
+.about .row1 .me-content .text {
+  width: 90%;
+  max-width: 100%;
+  text-align: justify;
+  border: 1px solid rebeccapurple;
+  box-shadow: 0 0 10px 2px rebeccapurple;
+  border-radius: 24px 0 0 24px;
+  padding: 20px;
+}
+
+.about .row1 .me-content .text h3 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.about .row1 .me-content .text p {
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+
+.about .row2 {
+  margin-top: 130px;
+  width: 100%;
+  background-color: #3b3b3b;
+  background-image: linear-gradient(to bottom, #3b3b3b, #171717);
+  max-width: 100%;
+}
+
+.about .row2 .friends .img-box {
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+}
+
+.about .row2 .friends .img-box img {
+  width: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+.about .row2 .friends {
+  display: flex;
+}
+
+/* .................................projects............................. */
+
+.projects {
+  margin-top: 140px;
+  width: 100vw;
+  max-width: 100%;
+  background: linear-gradient(to right, #5c5c5c, #1d1d1d);
+}
+
+.projects .row {
+  margin: 40px 0;
+}
+
+.projects h2 {
+  width: fit-content;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+}
+
+.projects h2 .ex {
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  left: 20px;
+  border: 4px solid #fff;
+  border-radius: 24px;
+}
+
+.projects .pro {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.projects .pro-box {
+  position: relative;
+  background-color: #000;
+  border-radius: 10px;
+  padding: 20px 20px 40px 20px;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  box-shadow: 0px 0px 2px 3px rgb(128, 26, 230);
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.6rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.projects .pro-box::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    76.35deg,
+    rgb(128, 26, 230) 15.89%,
+    rgb(162, 26, 230) 89.75%
+  );
+  opacity: 0.7;
+}
+
+.projects .pro-box h4 {
+  font-size: 24px;
+  z-index: 10;
+}
+
+.projects .pro-box p {
+  z-index: 10;
+}
+.projects .pro-box .pro-img {
+  margin-top: 20px;
+  width: 45px;
+  object-fit: cover;
+  max-width: 100%;
+  z-index: 10;
+  height: 45px;
+}
+
+.projects .pro-box .extra .link {
+  display: block;
+  padding: 12px 24px;
+  width: 50%;
+  margin: 10px 0;
+  cursor: pointer;
+  border: 1px solid #fff;
+  outline: none;
+  background: linear-gradient(
+    76.35deg,
+    rgb(128, 26, 230) 15.89%,
+    rgb(162, 26, 230) 89.75%
+  );
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 24px;
+}
+
+.projects .pro-box .extra .link > button {
+  background: linear-gradient(
+    76.35deg,
+    rgb(128, 26, 230) 15.89%,
+    rgb(162, 26, 230) 89.75%
+  );
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  outline: none;
+}
+
+.projects .pro-box .extra {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    76.35deg,
+    rgb(128, 26, 230) 15.89%,
+    rgb(162, 26, 230) 89.75%
+  );
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.projects .pro-box:hover:hover {
+  box-shadow: none;
+}
+
+.projects .pro-box:hover .extra {
+  display: block;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* ...................footer..................................... */
+
+footer {
+  background-color: #eee;
+  color: #000;
+  width: 100vw;
+  max-width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .row-ft {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* .........................Mobile......................... */
+
+
+/* ................................Max-Screen: 1130px.................... */
+@media screen and (max-width: 1130px) {
+  .hero .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero .extras {
+    width: fit-content;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+  }
+
+
+  .hero .extras::after{
+   border-radius: 0px 0 0 0px;
+   opacity: 0.4;
+  }
+
+  .hero .info {
+    width: 100%;
+    max-width: 100%;
+      margin-bottom: 0;
+      margin-top: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .hero .info .name-desktop {
+     display: none;
+  }
+
+  .hero .info .name-mobile {
+      display: block;
+      text-align: center;
+  }
+  .hero .info h3 {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero .info .main-hero-text{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero .info .col {
+      display: none;
+  }
+
+  .hero .info .col-mobile {
+      display: block;
+  }
+
+  .hero .hero-btn-flex{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .hero .contact-details {
+    width: 100%;
+    font-size: 16px;
+    border-radius: 0px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .hero .contact-details .contact-text{
+    display: none;
+  }
+
+  .about .row1 {
+    flex-direction: column;
+  }
+
+  .about .row1 .me-content {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+  }
+
+  .about .row1 .me {
+      display: none;
+  }
+
+  .about .row1 .me-content .text {
+      width: 100%;
+  }
+
+  .about .row1 .me-content .text p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.4rem;
+  }
+
+  .projects .pro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 100%;
+  }
+
+  .skills .skill {
+      flex-wrap: wrap;
+  }
+
+  
+}
+
+/* @media screen and(max-width: 1120px) {
+    .hero .extras {
+        width: 200px;
+    }
+} */
