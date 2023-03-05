@@ -14,7 +14,6 @@ window.addEventListener('load', async function () {
 const observer = new IntersectionObserver(entries => {
     if (entries[0].isIntersecting) {
       section.classList.add('animate3');
-      console.log(section);
   } else {
     section.classList.remove('animate3');
   }
