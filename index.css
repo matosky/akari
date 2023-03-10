@@ -12,7 +12,8 @@ html {
 }
 
 body {
-  background: linear-gradient(to right, #5c5c5c, #1d1d1d);
+  background-color: #fff;
+  /* background: linear-gradient(to right, #5c5c5c, #1d1d1d); */
   color: #fff;
 }
 
@@ -60,8 +61,9 @@ header .flex nav ul li {
 .hero-section {
   width: 100vw;
   position: relative;
-  background-color: #3b3b3b;
-  background-image: linear-gradient(to bottom, #3b3b3b, #171717);
+  background-color: #000;
+  /* background-color: #3b3b3b;
+  background-image: linear-gradient(to bottom, #3b3b3b, #171717); */
 }
 
 .hero {
@@ -241,8 +243,9 @@ opacity: 0.7;
   max-width: 100%;
   position: relative;
   padding: 40px 0;
-  background-color: #3b3b3b;
-  background-image: linear-gradient(to bottom, #3b3b3b, #171717);
+  background-color: #000;
+  /* background-color: #3b3b3b;
+  background-image: linear-gradient(to bottom, #3b3b3b, #171717); */
  
 }
 
@@ -278,8 +281,9 @@ opacity: 0.7;
   right: 0;
   width: 800px;
   border-radius: 24px 0 0 24px;
-  background-color: #3b3b3b;
-  background-image: linear-gradient(to bottom, #3b3b3b, #171717);
+  background-color: #000;
+  /* background-color: #3b3b3b;
+  background-image: linear-gradient(to bottom, #3b3b3b, #171717); */
 }
 
 .about .row1 .me-content .text {
@@ -307,8 +311,9 @@ opacity: 0.7;
 .about .row2 {
   margin-top: 130px;
   width: 100%;
-  background-color: #3b3b3b;
-  background-image: linear-gradient(to bottom, #3b3b3b, #171717);
+  background-color: #000;
+  /* background-color: #3b3b3b;
+  background-image: linear-gradient(to bottom, #3b3b3b, #171717); */
   max-width: 100%;
 }
 
@@ -338,10 +343,11 @@ opacity: 0.7;
 /* .................................projects............................. */
 
 .projects {
-  margin-top: 140px;
+  margin-top: 80px;
   width: 100vw;
   max-width: 100%;
-  background: linear-gradient(to right, #5c5c5c, #1d1d1d);
+  background-color: #fff;
+  /* background: linear-gradient(to right, #5c5c5c, #1d1d1d); */
 }
 
 .projects .row {
@@ -355,7 +361,7 @@ opacity: 0.7;
   margin: 0 auto;
   font-weight: 700;
   font-size: 32px;
-  color: #fff;
+  color: #000;
 }
 
 .projects h2 .ex {
@@ -363,7 +369,7 @@ opacity: 0.7;
   bottom: -10px;
   width: 100%;
   left: 20px;
-  border: 4px solid #fff;
+  border: 4px solid #000;
   border-radius: 24px;
 }
 
@@ -379,7 +385,7 @@ opacity: 0.7;
   border-radius: 10px;
   padding: 20px 20px 40px 20px;
   width: 300px;
-  height: 400px;
+  height: 300px;
   margin: 20px;
   display: flex;
   align-items: center;
@@ -491,8 +497,10 @@ opacity: 0.7;
 /* ...................footer..................................... */
 
 footer {
+  margin-top: 100px;
   background-color: #eee;
   color: #000;
+  padding: 50px 0;
   width: 100vw;
   max-width: 100%;
   height: 50px;
